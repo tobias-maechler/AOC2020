@@ -10,7 +10,7 @@ public class Test {
 			
 			while ((names = reader.readNextLine()) != null) {
 				System.out.println("Policy: " + names[0] + " Password: " + names[1]);
-				if (PasswordCheck.Valid(names[0], names[1])) {
+				if (PasswordCheck.TobogganCorporatePolicy(names[0], names[1])) {
 					validPasswords++;
 				}
 			}			
